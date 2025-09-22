@@ -1,7 +1,8 @@
 # Intro to commands
 In this challenge, you will invoke your first command! When you type a command and hit enter, the command will be invoked, as so:
 
-'''sh
+'''
+
 hacker@dojo:~$ whoami
 hacker
 hacker@dojo:~$
@@ -13,6 +14,7 @@ once the terminal comes up, we are required to invoke the '''hello''' command, w
 
 #### commands run:
 '''sh
+
 $hello
 '''
 
@@ -28,6 +30,7 @@ pwn.college{Qbbz66Xxccz2hBhcDs-0ROxBFuN.QX3YjM1wSOyAzNzEzW}
 a command with arguments, which is what we call additional data passed to the command. When you type a line of text and hit enter, the shell actually parses your input into a command and its arguments. The first word is the command, and the subsequent words are arguments.
 
 '''sh
+
 hacker@dojo:~$ echo Hello
 Hello
 hacker@dojo:~$
@@ -37,10 +40,12 @@ here the command was echo, the primary use of echo is to print text to the conso
 
 echo can be used with multiple arguments as well.
 '''sh
+
 hacker@dojo:~$ echo Hello Hackers!
 Hello Hackers!
 hacker@dojo:~$
 '''
+
 In this case, the command was echo, and Hello and Hackers! were the two arguments to echo. 
 
 ## solution:
@@ -54,6 +59,7 @@ $ hello hackers
 
 ## flag:
 '''
+
 pwn.college{8_mHbucX3fkW4W335d3Vj4-SOo6.QX4YjM1wSOyAzNzEzW}
 '''
 
