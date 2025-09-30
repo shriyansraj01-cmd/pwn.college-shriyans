@@ -1,0 +1,25 @@
+# Challenge 1 
+
+## flag 
+```sh 
+pwn.college{EXYOGAJMIRbHu9s0pq-bvLrDHmD.QX3UTN0wSOyAzNzEzW}
+```
+
+# challenge 2 
+setting variables 
+learning how to assign variables certain values and realising that how case sensitive assigning values cab be.
+
+## flag 
+```sh 
+pwn.college{cT1Hv_2HLumHDL16ibqDzX3wDWk.QX5UTN0wSOyAzNzEzW}
+```
+# challenge 3 
+multi word variables 
+how to assign varibles multiple words by putting the sentence or multiple values in " " 
+
+## flag
+```sh
+pwn.college{UU1sfYlSxiScdxa4eLkShJgZU-K.QXwYTN0wSOyAzNzEzW}
+```
+
+# Challenge 4
