@@ -62,3 +62,22 @@ FD 0: Standard Input
 FD 1: Standard Output
 FD 2: Standard Error
 
+# Challenge 6 (Grepping stored results)
+## solution
+Redirect the output of /challenge/run to /tmp/data.txt.
+This will result in a hundred thousand lines of text, with one of them being the flag, in /tmp/data.txt.
+grep that for the flag!
+
+## flag 
+```sh
+pwn.college{kbDqEp8Ki8oeRiVtGQKXdgnSiHB.QX4EDO0wSOyAzNzEzW}
+```
+
+# Challenge 7 
+It turns out that you can "cut out the middleman" and avoid the need to store results to a file, like you did in the last level. You can do this by using the | (pipe) operator. Standard output from the command to the left of the pipe will be connected to (piped into) the standard input of the command to the right of the pipe.
+
+## flag 
+pwn.college{8tDmhhyRjKDiPyXwuFBKs38i4cb.QX5EDO0wSOyAzNzEzW}
+
+# challenge 8 
+
