@@ -44,4 +44,25 @@ pwn.college{gYtTdZRFrU7ZbRuogYEU_yH89vt.QX1EDO0wSOyAzNzEzW}
 pwn.college{IHjxJB7rGVPshlroBxRrffJCLWZ.QX3IDO0wSOyAzNzEzW}
 ```
 
-#
+# challenge 7 (help for bulitins)
+Some commands, rather than being programs with man pages and help options, are built into the shell itself. These are called builtins. Builtins are invoked just like commands, but the shell handles them internally instead of launching other programs.
+
+## solution 
+help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune         display a fortune
+      --version         display the version
+      --secret VALUE    prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "AMwSh4EW".
+    challenge --secret AMwSh4EW
+Correct! Here is your flag!
+
+## flag: 
+```sh
+pwn.college{AMwSh4EWDad_HMVcvtpsarpRCd7.QX0ETO0wSOyAzNzEzW}
+```
