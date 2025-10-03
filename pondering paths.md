@@ -98,4 +98,105 @@ pwn.college{Izt-C7zjNYKvfKZACWx7vIWBaTO.QX4QTN0wSOyAzNzEzW}
 ```
 
 
-# challenge 6 (implict relative paths, from)
+# challenge 6 (implict relative paths, / from)
+About relative paths
+A relative path is any path that does not start at root (i.e., it does not start with /).
+A relative path is interpreted relative to your current working directory (cwd).
+Your cwd is the directory that your prompt is currently located at.
+This means how you specify a particular file, depends on where the terminal prompt is located.
+
+Imagine we want to access some file located at /tmp/a/b/my_file.
+
+If my cwd is /, then a relative path to the file is tmp/a/b/my_file.
+If my cwd is /tmp, then a relative path to the file is a/b/my_file.
+If my cwd is /tmp/a/b/c, then a relative path to the file is ../my_file. The .. refers to the parent directory.
+
+## solution 
+run /challenge/run using a relative path while having a current working directory of /.
+
+```sh
+cd /
+hacker@paths~implicit-relative-paths-from-:/$ challenge/run
+Correct!!!
+challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+```
+
+## flag 
+pwn.college{gTOQyBWIQnde8n18QtubZ0BIZFQ.QX5QTN0wSOyAzNzEzW}
+
+
+# challenge 7 
+The previous relative path was "naked": it directly specified the directory to descend into from the current directory. Noe, we're going to explore more explicit relative paths.
+In most operating systems, including Linux, every directory has two implicit entries that you can reference in paths: . and ... The first, ., refers right to the same directory, so the following absolute paths are all identical to each other:
+```sh
+/challenge
+/challenge/.
+/challenge/./././././././././
+/./././challenge/././
+```
+The following relative paths are also all identical to each other:
+```sh
+challenge
+./challenge
+./././challenge
+challenge/.
+```
+
+## solution 
+```sh
+cd /
+./challenge/run
+Correct!!!
+./challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+```
+
+##flag
+```sh
+pwn.college{0GqZ7Z2WMjF-TIVKMqFZxrRXkYI.QXwUTN0wSOyAzNzEzW}
+```
+
+# challenge 8
+In this level, we'll practice referring to paths using . a bit more. This challenge will need you to run it from the /challenge directory. 
+
+## solution 
+in this challenge, we'll learn how to explicitly use relative paths to launch run in this scenario. The way to do this is to tell Linux that you explicitly want to execute a program in the current directory, using . like in the previous levels.
+
+```sh
+cd /challenge
+./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+```
+
+## flag 
+```
+pwn.college{MXdxbzVDhqAh3bY3vMfljL4ek4X.QXxUTN0wSOyAzNzEzW}
+```
+
+# challenge 9
+
+## solution 
+In this challenge, /challenge/run will write a copy of the flag to any file you specify as an argument on the commandline, with these constraints:
+
+Your argument must be an absolute path.
+The path must be inside your home directory.
+Before expansion, your argument must be three characters or less.
+Again, you must specify your path as an argument to /challenge/run as so:
+
+```sh
+challenge/run ~/f
+Writing the file to /home/hacker/f!
+... and reading it back to you:
+```
+
+# flag 
+```sh 
+pwn.college{cu_sn3ljN1aIEfknN31uzsH-zrU.QXzMDO0wSOyAzNzEzW}
+```
+
+
+
+
