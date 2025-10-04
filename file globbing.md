@@ -6,9 +6,17 @@ pwn.college{IdNDwKHs6Dtm5zYthjrtd0ouMN3.QXxIDO0wSOyAzNzEzW}
 ```
 
 # challenge 2 (matching with ?)
+When it encounters a ? character in any argument, the shell will treat it as a single-character wildcard. This works like *, but only matches one character.
 
+## solution 
+```
+cd /?ha??enge
+/challenge$ /challenge/run
+You ran me with the working directory of /challenge! Here is your flag:
+```
 ## flag 
 ```sh
+pwn.college{MenKMKJeouzhhxOaOPnNx2WJfrc.QXyIDO0wSOyAzNzEzW}
 ```
 
 # Challenge 3 (matching with [])
@@ -50,3 +58,6 @@ You got it! Here is your flag!
 ```sh
 pwn.college{U3GH1DLd1u1pFC-wKZOzfKQhFMZ.0lM3kjNxwSOyAzNzEzW}
 ```
+
+# challenge 6
+
